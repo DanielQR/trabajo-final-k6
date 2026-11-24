@@ -1,0 +1,22 @@
+[
+  { "username": "qa_user01@example.com", "password": "secret" },
+  { "username": "qa_user02@example.com", "password": "secret" },
+  { "username": "qa_user03@example.com", "password": "secret" },
+  { "username": "qa_user04@example.com", "password": "secret" },
+  { "username": "qa_user05@example.com", "password": "secret" },
+  { "username": "qa_user06@example.com", "password": "secret" },
+  { "username": "qa_user07@example.com", "password": "secret" },
+  { "username": "qa_user08@example.com", "password": "secret" },
+  { "username": "qa_user09@example.com", "password": "secret" },
+  { "username": "qa_user10@example.com", "password": "secret" },
+  { "username": "qa_user11@example.com", "password": "secret" },
+  { "username": "qa_user12@example.com", "password": "secret" },
+  { "username": "qa_user13@example.com", "password": "secret" },
+  { "username": "qa_user14@example.com", "password": "secret" },
+  { "username": "qa_user15@example.com", "password": "secret" },
+  { "username": "qa_user16@example.com", "password": "secret" },
+  { "username": "qa_user17@example.com", "password": "secret" },
+  { "username": "qa_user18@example.com", "password": "secret" },
+  { "username": "qa_user19@example.com", "password": "secret" },
+  { "username": "qa_user20@example.com", "password": "secret" }
+]

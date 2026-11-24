@@ -1,0 +1,463 @@
+{
+  "root_group": {
+    "name": "",
+    "path": "",
+    "id": "d41d8cd98f00b204e9800998ecf8427e",
+    "groups": [
+      {
+        "name": "01_Home",
+        "path": "::01_Home",
+        "id": "79bc36f13981634bc688aaaa672625f1",
+        "groups": [],
+        "checks": [
+          {
+            "passes": 46339,
+            "fails": 0,
+            "name": "Home: status 200",
+            "path": "::01_Home::Home: status 200",
+            "id": "4e9a4895931827bf2ae6eb2a36c63faa"
+          },
+          {
+            "id": "ad18ab4113a917b89bc1f1640a55563d",
+            "passes": 46339,
+            "fails": 0,
+            "name": "Home: contiene QuickPizza",
+            "path": "::01_Home::Home: contiene QuickPizza"
+          }
+        ]
+      },
+      {
+        "name": "02_Login",
+        "path": "::02_Login",
+        "id": "1469644ca2b066d7a5d54c6944ebd5e6",
+        "groups": [],
+        "checks": [
+          {
+            "name": "Login: status 200",
+            "path": "::02_Login::Login: status 200",
+            "id": "c3f036b9d7d98fe0deae3b12d7f3bb26",
+            "passes": 46339,
+            "fails": 0
+          },
+          {
+            "path": "::02_Login::Login: token recibido",
+            "id": "c7995acf75c577f18179e2488b878f4a",
+            "passes": 46339,
+            "fails": 0,
+            "name": "Login: token recibido"
+          },
+          {
+            "passes": 26294,
+            "fails": 20045,
+            "name": "Login: responde en < 500ms",
+            "path": "::02_Login::Login: responde en < 500ms",
+            "id": "4f5ebc216330176324ed26052fe8f790"
+          }
+        ]
+      },
+      {
+        "id": "7d10c44b8bf0f3646e64b7c215ecacce",
+        "groups": [],
+        "checks": [
+          {
+            "id": "53485bc70452c5ba89327ed9f3dfb749",
+            "passes": 22386,
+            "fails": 70292,
+            "name": "Pizza: status 200",
+            "path": "::03_Recomendar_Pizza::Pizza: status 200"
+          },
+          {
+            "name": "Pizza: tiene id",
+            "path": "::03_Recomendar_Pizza::Pizza: tiene id",
+            "id": "efd37ac94d42717902902cd861b11a48",
+            "passes": 22386,
+            "fails": 70292
+          },
+          {
+            "path": "::03_Recomendar_Pizza::Pizza: tiene nombre",
+            "id": "6c40b7592dd98dfb7804f1867eba0b6b",
+            "passes": 22386,
+            "fails": 70292,
+            "name": "Pizza: tiene nombre"
+          },
+          {
+            "name": "Pizza: responde en < 500ms",
+            "path": "::03_Recomendar_Pizza::Pizza: responde en < 500ms",
+            "id": "225de55bb27fc2a6b8d09d6c5e278450",
+            "passes": 16467,
+            "fails": 76211
+          }
+        ],
+        "name": "03_Recomendar_Pizza",
+        "path": "::03_Recomendar_Pizza"
+      },
+      {
+        "name": "04_Calificar",
+        "path": "::04_Calificar",
+        "id": "eeb323f0a96c8170923cb45a865b7df9",
+        "groups": [],
+        "checks": [
+          {
+            "name": "Rating: status 201",
+            "path": "::04_Calificar::Rating: status 201",
+            "id": "a1fc3914cdcdb2fe2c443a1a95eed43f",
+            "passes": 13336,
+            "fails": 79
+          },
+          {
+            "id": "3db91893bf7ef7ba1de3823e5241a2b0",
+            "passes": 13336,
+            "fails": 79,
+            "name": "Rating: es la pizza correlacionada",
+            "path": "::04_Calificar::Rating: es la pizza correlacionada"
+          },
+          {
+            "name": "Rating: estrellas correctas",
+            "path": "::04_Calificar::Rating: estrellas correctas",
+            "id": "34002e450d59c2c538191786dbb7ee62",
+            "passes": 13336,
+            "fails": 79
+          }
+        ]
+      },
+      {
+        "name": "05_Mis_Calificaciones",
+        "path": "::05_Mis_Calificaciones",
+        "id": "734616dd9955316e2c00c312b8325665",
+        "groups": [],
+        "checks": [
+          {
+            "id": "64e42e69351214da0c0fdbc8e8bc9b53",
+            "passes": 13349,
+            "fails": 46,
+            "name": "Listar: status 200",
+            "path": "::05_Mis_Calificaciones::Listar: status 200"
+          },
+          {
+            "name": "Listar: devuelve lista",
+            "path": "::05_Mis_Calificaciones::Listar: devuelve lista",
+            "id": "8fd865109ea454e17c39e8e1d6e706d9",
+            "passes": 13349,
+            "fails": 46
+          }
+        ]
+      }
+    ],
+    "checks": []
+  },
+  "options": {
+    "summaryTrendStats": [
+      "avg",
+      "min",
+      "med",
+      "max",
+      "p(90)",
+      "p(95)"
+    ],
+    "summaryTimeUnit": "",
+    "noColor": false
+  },
+  "state": {
+    "isStdOutTTY": true,
+    "isStdErrTTY": true,
+    "testRunDurationMs": 665517.3814
+  },
+  "metrics": {
+    "http_req_sending": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.007965213809109365,
+        "min": 0,
+        "med": 0,
+        "max": 10.4835,
+        "p(90)": 0,
+        "p(95)": 0
+      }
+    },
+    "http_req_duration{name:02b_Login}": {
+      "thresholds": {
+        "p(95)<500": {
+          "ok": false
+        }
+      },
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 3075.9384299999983,
+        "avg": 778.1323437320634,
+        "min": 28.8725,
+        "med": 184.7113,
+        "max": 5823.9934,
+        "p(90)": 2256.0843200000036
+      }
+    },
+    "http_req_duration{name:04_Rating}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 11240.800439999994,
+        "avg": 2269.6442818188602,
+        "min": 0.3331,
+        "med": 214.5685,
+        "max": 60000.9361,
+        "p(90)": 3449.3667
+      },
+      "thresholds": {
+        "p(95)<500": {
+          "ok": false
+        }
+      }
+    },
+    "http_req_tls_handshaking": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(95)": 0,
+        "avg": 0,
+        "min": 0,
+        "med": 0,
+        "max": 0,
+        "p(90)": 0
+      }
+    },
+    "http_req_duration{name:03_Pizza}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 1483.010042667086,
+        "min": 0.3622,
+        "med": 1079.57205,
+        "max": 7739.5085,
+        "p(90)": 3224.1728300000004,
+        "p(95)": 3782.988279999999
+      },
+      "thresholds": {
+        "p(95)<500": {
+          "ok": false
+        }
+      }
+    },
+    "http_reqs": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 258525,
+        "rate": 388.4571721570366
+      }
+    },
+    "http_req_waiting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 867.3867202015505,
+        "min": 0,
+        "med": 95.8797,
+        "max": 60000.9361,
+        "p(90)": 2390.59304,
+        "p(95)": 3271.2049599999987
+      }
+    },
+    "vus": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "value": 19,
+        "min": 0,
+        "max": 1000
+      }
+    },
+    "data_received": {
+      "values": {
+        "count": 223708755,
+        "rate": 336142.6181377868
+      },
+      "type": "counter",
+      "contains": "data"
+    },
+    "group_duration": {
+      "contains": "time",
+      "values": {
+        "avg": 1457.526106059326,
+        "min": 0,
+        "med": 170.3315,
+        "max": 60001.4301,
+        "p(90)": 4301.341659999999,
+        "p(95)": 5500.038429999993
+      },
+      "type": "trend"
+    },
+    "login_exitoso": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 1,
+        "passes": 46339,
+        "fails": 0
+      },
+      "thresholds": {
+        "rate>0.99": {
+          "ok": true
+        }
+      }
+    },
+    "checks": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "rate": 0.5407204806390994,
+        "passes": 361981,
+        "fails": 307461
+      },
+      "thresholds": {
+        "rate>0.99": {
+          "ok": false
+        }
+      }
+    },
+    "tiempo_recomendacion_pizza": {
+      "contains": "time",
+      "values": {
+        "min": 0.3622,
+        "med": 1079.57205,
+        "max": 7739.5085,
+        "p(90)": 3224.1728300000004,
+        "p(95)": 3782.988279999999,
+        "avg": 1483.010042667086
+      },
+      "thresholds": {
+        "p(95)<500": {
+          "ok": false
+        }
+      },
+      "type": "trend"
+    },
+    "http_req_blocked": {
+      "values": {
+        "p(90)": 0,
+        "p(95)": 0,
+        "avg": 0.004027389227347456,
+        "min": 0,
+        "med": 0,
+        "max": 9.1201
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "http_req_receiving": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "avg": 0.18223461096605778,
+        "min": 0,
+        "med": 0,
+        "max": 235.4898,
+        "p(90)": 0.5916,
+        "p(95)": 0.9535
+      }
+    },
+    "vus_max": {
+      "type": "gauge",
+      "contains": "default",
+      "values": {
+        "max": 1000,
+        "value": 1000,
+        "min": 1000
+      }
+    },
+    "pizzas_recomendadas": {
+      "type": "counter",
+      "contains": "default",
+      "values": {
+        "count": 22386,
+        "rate": 33.63698774163977
+      }
+    },
+    "data_sent": {
+      "values": {
+        "count": 70661358,
+        "rate": 106175.07517437771
+      },
+      "type": "counter",
+      "contains": "data"
+    },
+    "http_req_failed": {
+      "type": "rate",
+      "contains": "default",
+      "values": {
+        "passes": 70417,
+        "fails": 188108,
+        "rate": 0.2723798472101344
+      },
+      "thresholds": {
+        "rate<0.01": {
+          "ok": false
+        }
+      }
+    },
+    "http_req_duration{expected_response:true}": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 6.25155,
+        "max": 59988.1108,
+        "p(90)": 1074.3447900000003,
+        "p(95)": 2020.9684149999982,
+        "avg": 467.50285452665776
+      }
+    },
+    "http_req_duration": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "min": 0,
+        "med": 96.1535,
+        "max": 60000.9361,
+        "p(90)": 2391.00922,
+        "p(95)": 3271.3655199999985,
+        "avg": 867.5769200263281
+      },
+      "thresholds": {
+        "p(95)<500": {
+          "ok": false
+        },
+        "p(99)<1000": {
+          "ok": false
+        }
+      }
+    },
+    "iteration_duration": {
+      "values": {
+        "avg": 6563.225398397117,
+        "min": 1821.6354,
+        "med": 5481.77065,
+        "max": 127875.7004,
+        "p(90)": 8920.573540000001,
+        "p(95)": 10529.115844999995
+      },
+      "type": "trend",
+      "contains": "time"
+    },
+    "iterations": {
+      "contains": "default",
+      "values": {
+        "count": 46292,
+        "rate": 69.55791282658753
+      },
+      "type": "counter"
+    },
+    "http_req_connecting": {
+      "type": "trend",
+      "contains": "time",
+      "values": {
+        "p(90)": 0,
+        "p(95)": 0,
+        "avg": 0.0021715366018760277,
+        "min": 0,
+        "med": 0,
+        "max": 6.6884
+      }
+    }
+  }
+}
